@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
@@ -19,20 +23,20 @@
     <header class="page-header">
       <div class="container">
         <div class="header">
-          <nav class="navigation">
+          <nav class="page-header__nav">
             <a class="logo" href="./index.html">
-              Web<span class="logo-black">Studio</span>
+              Web<span class="logo__text--black">Studio</span>
             </a>
             <ul class="site-nav">
               <li class="site-nav__item">
-                <a href="./index.html" class="site-nav__link">Студия</a>
+                <a
+                  href="./index.html"
+                  class="site-nav__link "
+                  >Студия</a
+                >
               </li>
               <li class="site-nav__item">
-                <a
-                  href="./portfolio.html"
-                  class="site-nav__link site-nav__link--activ"
-                  >Портфолио</a
-                >
+                <a href="./portfolio.html" class="site-nav__link site-nav__link--activ">Портфолио</a>
               </li>
               <li class="site-nav__item">
                 <a href="" class="site-nav__link">Контакты</a>
@@ -60,6 +64,9 @@
         </div>
       </div>
     </header>
+
+    <!-- main -->
+
     <main>
       <section class="section">
         <div class="container">
@@ -86,15 +93,15 @@
           <ul class="card-set">
             <li class="card-set__item">
               <a href="" class="card-set__link">
-                <div class="card-set__content">
+                <div class="product">
                   <img
                     src="./images/technoquack.jpg"
                     alt="Веб-сайт"
                     width="370"
                     height="294"
                   />
-                  <div class="card-set__overlay">
-                    <p class="card-set__text">
+                  <div class="product__overlay">
+                    <p class="product__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -102,23 +109,23 @@
                     </p>
                   </div>
                 </div>
-                <div class="card-set__meta">
-                  <h2 class="card-set__title">Технокряк</h2>
-                  <p class="card-set__name">Веб-сайт</p>
+                <div class="product__meta">
+                  <h2 class="product__title">Технокряк</h2>
+                  <p class="product__name">Веб-сайт</p>
                 </div>
               </a>
             </li>
             <li class="card-set__item">
               <a href="" class="card-set__link">
-                <div class="card-set__content">
+                <div class="product">
                   <img
                     src="./images/neworlean-vs-golden-star.jpg"
                     alt="Дизайн"
                     width="370"
                     height="294"
                   />
-                  <div class="card-set__overlay">
-                    <p class="card-set__text">
+                  <div class="product__overlay">
+                    <p class="product__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -126,25 +133,25 @@
                     </p>
                   </div>
                 </div>
-                <div class="card-set__meta">
-                  <h2 class="card-set__title">
+                <div class="product__meta">
+                  <h2 class="product__title">
                     Постер New Orlean vs Golden Star
                   </h2>
-                  <p class="card-set__name">Дизайн</p>
+                  <p class="product__name">Дизайн</p>
                 </div>
               </a>
             </li>
             <li class="card-set__item">
               <a href="" class="card-set__link">
-                <div class="card-set__content">
+                <div class="product">
                   <img
                     src="./images/seafood.jpg"
                     alt="Приложение"
                     width="370"
                     height="294"
                   />
-                  <div class="card-set__overlay">
-                    <p class="card-set__text">
+                  <div class="product__overlay">
+                    <p class="product__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -152,23 +159,23 @@
                     </p>
                   </div>
                 </div>
-                <div class="card-set__meta">
-                  <h2 class="card-set__title">Ресторан Seafood</h2>
-                  <p class="card-set__name">Приложение</p>
+                <div class=productt__meta">
+                  <h2 class="product__title">Ресторан Seafood</h2>
+                  <p class="product__name">Приложение</p>
                 </div>
               </a>
             </li>
             <li class="card-set__item">
               <a href="" class="card-set__link">
-                <div class="card-set__content">
+                <div class="product">
                   <img
                     src="./images/prime.jpg"
                     alt="Маркетинг"
                     width="370"
                     height="294"
                   />
-                  <div class="card-set__overlay">
-                    <p class="card-set__text">
+                  <div class="product__overlay">
+                    <p class="product__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -176,23 +183,23 @@
                     </p>
                   </div>
                 </div>
-                <div class="card-set__meta">
-                  <h2 class="card-set__title">Проект Prime</h2>
-                  <p class="card-set__name">Маркетинг</p>
+                <div class="product__meta">
+                  <h2 class="product__title">Проект Prime</h2>
+                  <p class="product__name">Маркетинг</p>
                 </div>
               </a>
             </li>
             <li class="card-set__item">
               <a href="" class="card-set__link">
-                <div class="card-set__content">
+                <div class="product">
                   <img
                     src="./images/boxes.jpg"
                     alt="Приложение"
                     width="370"
                     height="294"
                   />
-                  <div class="card-set__overlay">
-                    <p class="card-set__text">
+                  <div class="product__overlay">
+                    <p class="product__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -200,23 +207,23 @@
                     </p>
                   </div>
                 </div>
-                <div class="card-set__meta">
-                  <h2 class="card-set__title">Проект Boxes</h2>
-                  <p class="card-set__name">Приложение</p>
+                <div class="product__meta">
+                  <h2 class="product__title">Проект Boxes</h2>
+                  <p class="product__name">Приложение</p>
                 </div>
               </a>
             </li>
             <li class="card-set__item">
               <a href="" class="card-set__link">
-                <div class="card-set__content">
+                <div class="product">
                   <img
                     src="./images/inspiration-has-no-borders.jpg"
                     alt="Веб-сайт"
                     width="370"
                     height="294"
                   />
-                  <div class="card-set__overlay">
-                    <p class="card-set__text">
+                  <div class="product__overlay">
+                    <p class="product__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -224,23 +231,23 @@
                     </p>
                   </div>
                 </div>
-                <div class="card-set__meta">
-                  <h2 class="card-set__title">Inspiration has no Borders</h2>
-                  <p class="card-set__name">Веб-сайт</p>
+                <div class="product__meta">
+                  <h2 class="product__title">Inspiration has no Borders</h2>
+                  <p class="product__name">Веб-сайт</p>
                 </div>
               </a>
             </li>
             <li class="card-set__item">
               <a href="" class="card-set__link">
-                <div class="card-set__content">
+                <div class="product">
                   <img
                     src="./images/limited-edition.jpg"
                     alt="Дизайн"
                     width="370"
                     height="294"
                   />
-                  <div class="card-set__overlay">
-                    <p class="card-set__text">
+                  <div class="product__overlay">
+                    <p class="product__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -248,23 +255,23 @@
                     </p>
                   </div>
                 </div>
-                <div class="card-set__meta">
-                  <h2 class="card-set__title">Издание Limited Edition</h2>
-                  <p class="card-set__name">Дизайн</p>
+                <div class="product__meta">
+                  <h2 class="product__title">Издание Limited Edition</h2>
+                  <p class="product__name">Дизайн</p>
                 </div>
               </a>
             </li>
             <li class="card-set__item">
               <a href="" class="card-set__link">
-                <div class="card-set__content">
+                <div class="product">
                   <img
                     src="./images/lab.jpg"
                     alt="Маркетинг"
                     width="370"
                     height="294"
                   />
-                  <div class="card-set__overlay">
-                    <p class="card-set__text">
+                  <div class="product__overlay">
+                    <p class="product__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -272,23 +279,23 @@
                     </p>
                   </div>
                 </div>
-                <div class="card-set__meta">
-                  <h2 class="card-set__title">Проект LAB</h2>
-                  <p class="card-set__name">Маркетинг</p>
+                <div class="product__meta">
+                  <h2 class="product__title">Проект LAB</h2>
+                  <p class="product__name">Маркетинг</p>
                 </div>
               </a>
             </li>
             <li class="card-set__item">
               <a href="" class="card-set__link">
-                <div class="card-set__content">
+                <div class="product">
                   <img
                     src="./images/growing-business.jpg"
                     alt="Приложение"
                     width="370"
                     height="294"
                   />
-                  <div class="card-set__overlay">
-                    <p class="card-set__text">
+                  <div class="product__overlay">
+                    <p class="product__text">
                       Ресурс предлагает комплексные предложения с разным уровнем
                       функционала и сервисов. Все это позволит посетителю
                       получить исчерпывающие сведения о компании или частном
@@ -296,9 +303,9 @@
                     </p>
                   </div>
                 </div>
-                <div class="card-set__meta">
-                  <h2 class="card-set__title">Growing Business</h2>
-                  <p class="card-set__name">Приложение</p>
+                <div class="product__meta">
+                  <h2 class="product__title">Growing Business</h2>
+                  <p class="product__name">Приложение</p>
                 </div>
               </a>
             </li>
