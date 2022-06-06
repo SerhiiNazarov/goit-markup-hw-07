@@ -70,23 +70,23 @@
     <main>
       <section class="section">
         <div class="container">
-          <h1 class="title-hidden">Портфолио</h1>
+          <h1 class="visually-hidden">Портфолио</h1>
           <!-- Кнопки -->
           <ul class="filters">
-            <li class="item">
-              <button class="button-filter" type="button">Все</button>
+            <li class="filters__item">
+              <button class="filters__butoon" type="button">Все</button>
             </li>
-            <li class="item">
-              <button class="button-filter" type="button">Веб-сайты</button>
+            <li class="filters__item">
+              <button class="filters__butoon" type="button">Веб-сайты</button>
             </li>
-            <li class="item">
-              <button class="button-filter" type="button">Приложения</button>
+            <li class="filters__item">
+              <button class="filters__butoon" type="button">Приложения</button>
             </li>
-            <li class="item">
-              <button class="button-filter" type="button">Дизайн</button>
+            <li class="filters__item">
+              <button class="filters__butoon" type="button">Дизайн</button>
             </li>
-            <li class="item">
-              <button class="button-filter" type="button">Маркетинг</button>
+            <li class="filters__item">
+              <button class="filters__butoon" type="button">Маркетинг</button>
             </li>
           </ul>
           <!-- Портфолио -->
@@ -313,77 +313,102 @@
         </div>
       </section>
     </main>
-    <!--Подвал-->
+    <!--footer-->
     <footer class="page-footer">
-      <div class="container footer-links">
+      <div class="container page-footer__container">
         <div>
-          <a class="logo-footer" href="./index.html"
-            >Web<span class="logo-white">Studio</span></a
+          <a class="logo" href="./index.html"
+            >Web<span class="logo__text--white">Studio</span></a
           >
           <address>
             <ul class="address">
-              <li class="element">
-                <p class="title">г. Киев, пр-т Леси Украинки, 26</p>
+              <li class="address__item">
+                <p class="address__text">г. Киев, пр-т Леси Украинки, 26</p>
               </li>
-              <li class="element">
-                <a class="item" href="mailto:info@example.com"
+              <li class="address__item">
+                <a class="address__link" href="mailto:info@example.com"
                   >info@example.com</a
                 >
               </li>
-              <li class="element">
-                <a class="item" href="tel:+380961111111">+38 096 111 11 11</a>
+              <li class="address__item">
+                <a class="address__link" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
               </li>
             </ul>
           </address>
         </div>
 
-        <div class="footer-list">
-          <p class="title-lincs">ПРИСОЕДЕНЯЙТЕСЬ</p>
+        <div class="social">
+          <p class="social__title">ПРИСОЕДЕНЯЙТЕСЬ</p>
 
-          <ul class="icons-list join-list">
-            <li class="links-list">
-              <a href="" class="links-team social-links">
-                <svg class="icons-team icon-footer" width="20" height="20">
+          <ul class="list-icons social__list-icons">
+            <li class="list-icons__item">
+              <a href="" class="list-icons__link social__link">
+                <svg
+                  class="list-icons__icon social__icon"
+                  width="20"
+                  height="20"
+                >
                   <use href="./images/icons.svg#instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="links-list">
-              <a href="" class="links-team social-links">
-                <svg class="icons-team icon-footer" width="20" height="20">
+            <li class="list-icons__item">
+              <a href="" class="list-icons__link social-link">
+                <svg
+                  class="list-icons__icon social__icon"
+                  width="20"
+                  height="20"
+                >
                   <use href="./images/icons.svg#twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="links-list">
-              <a href="" class="links-team social-links">
-                <svg class="icons-team icon-footer" width="20" height="20">
+            <li class="list-icons__item">
+              <a href="" class="list-icons__link social-link">
+                <svg
+                  class="list-icons__icon social__icon"
+                  width="20"
+                  height="20"
+                >
                   <use href="./images/icons.svg#facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="links-list">
-              <a href="" class="links-team social-links">
-                <svg class="icons-team icon-footer" width="20" height="20">
+            <li class="list-icons__item">
+              <a href="" class="list-icons__link social-link">
+                <svg
+                  class="list-icons__icon social__icon"
+                  width="20"
+                  height="20"
+                >
                   <use href="./images/icons.svg#linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <div class="footer-modal">
-          <form class="footer-form">
-            <p class="footer-modal-text">Подпишитесь на рассылку</p>
-            <div class="footer-form-field">
-              <label for="mail"></label>
-              <input type="email" name="mail" id="mail" placeholder="E-mail" />
-            </div>
-            <button class="button footer-modal-button" type="submit">
+        <div class="subscription">
+          <form action="javascript:void(0);" class="subscription__form">
+            <p class="subscription__text">Подпишитесь на рассылку</p>
+            <div class="subscription__form-field">
+              <label for="email"></label>
+              <input
+                type="email"
+                name="mail"
+                id="email"
+                placeholder="E-mail"
+                class="subscription__input"
+              />
+              <button class="button subscription__button" type="submit">
               Подписаться
-              <svg width="24" height="24" class="footer-modal-icon">
+              <svg width="24" height="24" class="subscription__icon">
                 <use href="./images/icons.svg#plane"></use>
               </svg>
             </button>
+            </div>
+            
           </form>
         </div>
       </div>

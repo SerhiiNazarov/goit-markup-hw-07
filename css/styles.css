@@ -442,7 +442,7 @@ img {
   outline: none;
 }
 
-.button--modal {
+.modal__button {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -461,9 +461,17 @@ img {
   padding-bottom: 94px;
 }
 
-.title-hidden {
-  text-align: center;
-  font-size: 0;
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 .features {
@@ -604,20 +612,20 @@ img {
   line-height: 1.19;
 }
 
-.social-icons {
+.list-icons {
   display: flex;
   margin-right: 32px;
   margin-bottom: 30px;
   margin-left: 32px;
 }
 
-.social-icons__icon {
+.list-icons__icon {
   fill: #afb1b8;
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-icons__links {
+.list-icons__link {
   display: flex;
   padding: 12px;
   cursor: pointer;
@@ -626,21 +634,21 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-icons__links:hover,
-.social-icons__links:focus {
+.list-icons__link:hover,
+.list-icons__link:focus {
   background-color: var(--accent-color);
 }
 
-.social-icons__links:hover .social-icons__icon,
-.social-icons__links:focus .social-icons__icon {
+.list-icons__link:hover .list-icons__icon,
+.list-icons__link:focus .list-icons__icon {
   fill: var(--main-bg-color);
 }
 
-.social-icons__item {
+.list-icons__item {
   margin-right: 10px;
 }
 
-.social-icons__item:last-child {
+.list-icons__item:last-child {
   margin-right: 0;
 }
 
@@ -651,11 +659,11 @@ img {
   box-sizing: border-box;
 }
 
-.clients-list {
+.clients__item {
   display: flex;
 }
 
-.client-link {
+.clients__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -666,25 +674,29 @@ img {
   height: 92px;
 }
 
-.icons-client {
+.clients__icon {
   fill: #afb1b8;
   border: none;
 
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.client-link:hover,
-.client-link:focus {
+.clients__link:hover,
+.clients__link:focus {
   border: 1px solid var(--accent-color);
 }
 
-.client-link:hover .icons-client,
-.client-link:focus .icons-client {
+.clients__link:hover .clients__icon,
+.clients__link:focus .clients__icon {
   fill: var(--accent-color);
 }
 
-.clients-list + .clients-list {
-  margin-left: 30px;
+.clients__item {
+  margin-right: 30px;
+}
+
+.clients__item:last-child {
+  margin-right: 0;
 }
 
 /* footer */
@@ -750,15 +762,17 @@ img {
   display: flex;
 }
 
-.footer-icons {
+/* social links */
+
+.social {
   margin-left: 70px;
 }
-/* social links */
-.social-links {
+
+.social__link {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.footer-icons__title {
+.social__title {
   color: var(--main-bg-color);
   margin-bottom: 20px;
 
@@ -768,11 +782,11 @@ img {
   text-transform: uppercase;
 }
 
-.icon-footer {
+.social__icon {
   fill: var(--main-bg-color);
 }
 
-.footer-icons__social-icons {
+.social__list-icons {
   margin: 0;
 }
 
@@ -901,11 +915,13 @@ img {
   line-height: 1.88;
 }
 
-.footer-modal {
+/* subscription */
+
+.subscription {
   margin-left: auto;
 }
 
-.footer-modal-text {
+.subscription__text {
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -915,15 +931,15 @@ img {
   color: var(--main-bg-color);
 }
 
-.footer-form {
+.subscription__form {
   background-color: var(--background-black-color);
 }
 
-.footer-form-field {
+.subscriptio__form-field {
   display: inline-block;
 }
 
-.footer-form-field input[type='email'] {
+.subscription__input[type='email'] {
   width: 358px;
   height: 50px;
   padding-left: 16px;
@@ -939,12 +955,12 @@ img {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-form-field input:hover,
-.footer-form-field input:focus {
+.subscription__input:hover,
+.subscription__input:focus {
   border: 1px solid var(--main-bg-color);
 }
 
-.footer-modal-button {
+.subscription__button {
   display: inline-flex;
   align-items: center;
   min-width: 200px;
@@ -952,6 +968,6 @@ img {
   padding: 10px 28px;
 }
 
-.footer-modal-icon {
+.subscription__icon {
   margin-left: 10px;
 }
