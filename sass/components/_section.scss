@@ -1,0 +1,22 @@
+.section {
+  padding: 94px 0;
+
+  &--work {
+    padding-top: 0;
+  }
+
+  &--team {
+    background-color: $primary-bg-color;
+  }
+}
+
+.section__title {
+  @extend %indentations;
+
+  margin-bottom: 50px;
+  text-align: center;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+}

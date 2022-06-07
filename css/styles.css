@@ -78,7 +78,7 @@ img {
   text-decoration: none;
 }
 
-.logo__text--black {
+.logo--text-black {
   color: #000000;
 }
 
@@ -717,7 +717,7 @@ img {
   text-decoration: none;
 }
 
-.logo__text--white {
+.logo--text-white {
   color: var(--main-bg-color);
 }
 

@@ -1,0 +1,42 @@
+.address {
+  @extend %list-style;
+
+  margin-top: 20px;
+}
+
+.address__item {
+  margin-top: 9px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.address__text,
+.address__link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  text-decoration: none;
+}
+
+.address__text {
+  @extend %indentations;
+
+  color: $main-bg-color;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.address__link {
+  color: rgba(255, 255, 255, 0.6);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}

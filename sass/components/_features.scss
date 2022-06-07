@@ -1,0 +1,46 @@
+.features {
+  @extend %list-style;
+
+  display: flex;
+}
+
+.features__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  width: 270px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-color: $primary-bg-color;
+}
+
+.features__item {
+  margin-right: 30px;
+  min-width: 270px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.features__title {
+  @extend %indentations;
+
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.features__text {
+  @extend %indentations;
+
+  color: $primary-text-color;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}

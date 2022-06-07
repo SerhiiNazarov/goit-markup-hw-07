@@ -6,8 +6,12 @@
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
-}
 
-.logo__text--black {
-  color: #000000;
+  &__text-black {
+    color: #000000;
+  }
+
+  &__text-white {
+    color: $main-bg-color;
+  }
 }
