@@ -1,0 +1,12 @@
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
+
+.header {
+  @include centeredflex();
+}
+
+.page-header__nav {
+  align-items: center;
+  display: flex;
+}
