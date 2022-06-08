@@ -14,17 +14,15 @@
 
 .address__text,
 .address__link {
+  @extend %fonts-text;
+
   font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
   text-decoration: none;
 }
 
 .address__text {
-  @extend %indentations;
-
   color: $main-bg-color;
+  text-decoration: none;
 
   &:hover,
   &:focus {

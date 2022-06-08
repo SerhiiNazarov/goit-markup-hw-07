@@ -6,11 +6,11 @@
 
 .site-nav__link {
   @extend %fonts__site-nav-contacts;
-  @extend %text-decoration;
 
   display: block;
   padding: 32px 0;
   color: $title-text-color;
+  text-decoration: none;
 
   &--activ::after {
     position: absolute;

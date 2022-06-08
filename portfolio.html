@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-   
+
     <link rel="stylesheet" href="./css/portfolio.min.css" />
   </head>
 
@@ -19,21 +19,21 @@
     <!--Верхняя линия-->
     <header class="page-header">
       <div class="container">
-        <div class="header">
+        <div class="page-header__content">
           <nav class="page-header__nav">
             <a class="logo" href="./index.html">
-              Web<span class="logo__text--black">Studio</span>
+              Web<span class="logo--black">Studio</span>
             </a>
             <ul class="site-nav">
               <li class="site-nav__item">
-                <a
-                  href="./index.html"
-                  class="site-nav__link "
-                  >Студия</a
-                >
+                <a href="./index.html" class="site-nav__link">Студия</a>
               </li>
               <li class="site-nav__item">
-                <a href="./portfolio.html" class="site-nav__link site-nav__link--activ">Портфолио</a>
+                <a
+                  href="./portfolio.html"
+                  class="site-nav__link site-nav__link--activ"
+                  >Портфолио</a
+                >
               </li>
               <li class="site-nav__item">
                 <a href="" class="site-nav__link">Контакты</a>
@@ -96,6 +96,7 @@
                     alt="Веб-сайт"
                     width="370"
                     height="294"
+                    class="products__image"
                   />
                   <div class="product__overlay">
                     <p class="product__text">
@@ -120,6 +121,7 @@
                     alt="Дизайн"
                     width="370"
                     height="294"
+                    class="products__image"
                   />
                   <div class="product__overlay">
                     <p class="product__text">
@@ -146,6 +148,7 @@
                     alt="Приложение"
                     width="370"
                     height="294"
+                    class="products__image"
                   />
                   <div class="product__overlay">
                     <p class="product__text">
@@ -156,7 +159,7 @@
                     </p>
                   </div>
                 </div>
-                <div class=productt__meta">
+                <div class="product__meta">
                   <h2 class="product__title">Ресторан Seafood</h2>
                   <p class="product__name">Приложение</p>
                 </div>
@@ -170,6 +173,7 @@
                     alt="Маркетинг"
                     width="370"
                     height="294"
+                    class="products__image"
                   />
                   <div class="product__overlay">
                     <p class="product__text">
@@ -194,6 +198,7 @@
                     alt="Приложение"
                     width="370"
                     height="294"
+                    class="products__image"
                   />
                   <div class="product__overlay">
                     <p class="product__text">
@@ -218,6 +223,7 @@
                     alt="Веб-сайт"
                     width="370"
                     height="294"
+                    class="products__image"
                   />
                   <div class="product__overlay">
                     <p class="product__text">
@@ -242,6 +248,7 @@
                     alt="Дизайн"
                     width="370"
                     height="294"
+                    class="products__image"
                   />
                   <div class="product__overlay">
                     <p class="product__text">
@@ -266,6 +273,7 @@
                     alt="Маркетинг"
                     width="370"
                     height="294"
+                    class="products__image"
                   />
                   <div class="product__overlay">
                     <p class="product__text">
@@ -290,6 +298,7 @@
                     alt="Приложение"
                     width="370"
                     height="294"
+                    class="products__image"
                   />
                   <div class="product__overlay">
                     <p class="product__text">
@@ -315,7 +324,7 @@
       <div class="container page-footer__container">
         <div>
           <a class="logo" href="./index.html"
-            >Web<span class="logo__text--white">Studio</span></a
+            >Web<span class="logo--white">Studio</span></a
           >
           <address>
             <ul class="address">
@@ -335,6 +344,8 @@
             </ul>
           </address>
         </div>
+
+        <!-- social -->
 
         <div class="social">
           <p class="social__title">ПРИСОЕДЕНЯЙТЕСЬ</p>
@@ -386,9 +397,12 @@
             </li>
           </ul>
         </div>
+
+        <!-- subscription -->
+
         <div class="subscription">
           <form action="javascript:void(0);" class="subscription__form">
-            <p class="subscription__text">Подпишитесь на рассылку</p>
+            <p class="subscription__title">Подпишитесь на рассылку</p>
             <div class="subscription__form-field">
               <label for="email"></label>
               <input
@@ -399,13 +413,12 @@
                 class="subscription__input"
               />
               <button class="button subscription__button" type="submit">
-              Подписаться
-              <svg width="24" height="24" class="subscription__icon">
-                <use href="./images/icons.svg#plane"></use>
-              </svg>
-            </button>
+                Подписаться
+                <svg width="24" height="24" class="subscription__icon">
+                  <use href="./images/icons.svg#plane"></use>
+                </svg>
+              </button>
             </div>
-            
           </form>
         </div>
       </div>

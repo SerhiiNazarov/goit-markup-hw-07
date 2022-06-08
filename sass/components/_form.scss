@@ -20,6 +20,8 @@
 }
 
 .form__input {
+  @include transition($type: border);
+
   height: 40px;
   margin: 0;
   padding-top: 12px;
@@ -31,8 +33,6 @@
   outline: none;
 
   color: $title-text-color;
-
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
@@ -49,6 +49,8 @@
 }
 
 .form__textarea {
+  @include transition($type: border);
+
   min-height: 120px;
   margin: 0;
   padding: 12px 16px;
@@ -56,8 +58,6 @@
   border-radius: 4px;
   resize: none;
   outline: none;
-
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &::placeholder {
     font-size: 12px;
@@ -74,13 +74,13 @@
 }
 
 .form__icon {
+  @include transition();
+
   position: absolute;
   display: inline-block;
   top: 50%;
   left: 15px;
   fill: currentColor;
-
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   .form__input:hover ~ &,
   .form__input:focus ~ & {
@@ -116,12 +116,10 @@
 }
 
 .form__label[for="policy"] {
-  display: flex;
-  align-items: center;
+  @extend %fonts-text;
+  @include centeredflex();
+
   margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
   letter-spacing: 0.03em;
 }
 

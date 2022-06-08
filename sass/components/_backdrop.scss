@@ -1,4 +1,6 @@
 .backdrop {
+  @include transition($type: opacity);
+
   position: fixed;
   top: 0;
   left: 0;
@@ -7,7 +9,6 @@
   background: rgba(0, 0, 0, 0.2);
 
   opacity: 1;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   z-index: 2;
 

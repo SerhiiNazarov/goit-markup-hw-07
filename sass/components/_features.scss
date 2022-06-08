@@ -5,9 +5,8 @@
 }
 
 .features__icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include centeredflex();
+
   height: 120px;
   width: 270px;
   margin-bottom: 30px;
@@ -16,16 +15,16 @@
 }
 
 .features__item {
-  margin-right: 30px;
   min-width: 270px;
 
-  &:last-child {
-    margin-right: 0;
+  &:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
 .features__title {
   @extend %indentations;
+  @extend %fonts-title;
 
   margin-bottom: 10px;
 
@@ -37,10 +36,7 @@
 
 .features__text {
   @extend %indentations;
+  @extend %fonts-text;
 
   color: $primary-text-color;
-
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
 }

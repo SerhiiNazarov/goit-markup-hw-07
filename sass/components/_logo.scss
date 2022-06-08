@@ -7,11 +7,11 @@
   line-height: 1.19;
   text-decoration: none;
 
-  &__text-black {
+  &--black {
     color: #000000;
   }
 
-  &__text-white {
+  &--white {
     color: $main-bg-color;
   }
 }

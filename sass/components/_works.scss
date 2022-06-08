@@ -8,10 +8,9 @@
 .works__item {
   position: relative;
   flex-basis: calc((100% - 60px) / 3);
-  margin-right: 30px;
 
-  &:nth-child(3n) {
-    margin-right: 0;
+  &:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
@@ -20,10 +19,9 @@
 }
 
 .works__content {
-  display: flex;
+  @include centeredflex();
+
   position: absolute;
-  justify-content: center;
-  align-items: center;
   bottom: 0;
 
   width: 100%;
@@ -32,13 +30,9 @@
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.works__text {
+.works__title {
   @extend %indentations;
+  @extend %fonts-title;
 
   color: $main-bg-color;
-
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
 }
