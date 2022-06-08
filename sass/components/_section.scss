@@ -1,11 +1,11 @@
 .section {
   padding: 94px 0;
 
-  &--work {
+  &__work {
     padding-top: 0;
   }
 
-  &--team {
+  &__team {
     background-color: $primary-bg-color;
   }
 }

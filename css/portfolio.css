@@ -340,11 +340,11 @@ body {
   padding: 94px 0;
 }
 
-.section--work {
+.section__work {
   padding-top: 0;
 }
 
-.section--team {
+.section__team {
   background-color: #f5f4fa;
 }
 
